@@ -7,18 +7,18 @@ RUN apt-get update && apt-get install -y \
     curl \
     nano \
     php \
-    php-cli \
+    php-bcmath \
     php-curl \
     php-gd \
     php-dom \
     php-intl \
     php-json \
+    php-mbstring \
+    php-mysql \
+    php-opcache \
+    php-soap \
     php-xml \
     php-xsl \
-    php-mbstring \
-    php-mcrypt \
-    php-mysql \
-    php-soap \
     php-zip \
     && apt-get clean
     
