@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean
     
 # Install extra utils
-RUN curl -sS https://getcomposer.org/installer | php -- --1 \
-    && mv composer.phar /usr/local/bin/composer \
-    && chmod a+x /usr/local/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php -- --1
+RUN mv composer.phar /usr/local/bin/composer
+RUN chmod a+x /usr/local/bin/composer
     
