@@ -1,6 +1,8 @@
 FROM ubuntu:20.04
 MAINTAINER Unai Lopez <ulopezrojo@gmail.com>
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 # install OS packages
 RUN apt-get update && apt-get install -y \
     git \
